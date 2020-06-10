@@ -1,9 +1,9 @@
 import React from "react";
-
+import GG from '../img/gg.png'
 function Contact() {
   return (
     <div>
-      <p>Contact</p>
+      <img src={GG} alt=""/>
     </div>
   );
 }

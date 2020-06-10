@@ -12,6 +12,8 @@ function Nav() {
     color: "#333",
     textTransform: "uppercase",
     fontWeight: "bold",
+
+    
   };
 
   const iconStyle = {
@@ -21,25 +23,33 @@ function Nav() {
     marginRight: "10px",
   };
 
+  function changeColor(e){
+    e.target.style.color = "#fff";
+  }
+
+  function onLeave(e){
+    e.target.style.color = "#333";
+  }
+
   // const isactive = usemediaquery("(max-width: 1024px");
   return (
     <div>
       <nav>
         <ul className="nav-links">
           <li>
-            <Link style={style} to="/">
+            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="/">
               <HomeOutlinedIcon style={iconStyle} />
               Home
             </Link>
           </li>
           <li>
-            <Link style={style} to="about">
+            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="about">
               <InfoOutlinedIcon style={iconStyle} />
               About
             </Link>
           </li>
           <li>
-            <Link style={style} to="contact">
+            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="contact">
               <PermContactCalendarOutlinedIcon style={iconStyle} />
               Contact
             </Link>

@@ -1,16 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import Review from './Review'
 
-export default class Home extends Component {
-  async componentDidMount() {
-    const url = "https://jsonplaceholder.typicode.com/posts";
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-  }
+function Home(){
+ 
 
-  render() {
     return (
       <div className="home">
         <section className="showcase">
@@ -19,10 +14,15 @@ export default class Home extends Component {
             <p>li ming is cute though. armin is a kek and is a snowflake</p>
             <p>
               li ming li ming li ming li ming li ming li ming li ming li ming li
-              ming li ming li ming{" aas"}
+              ming li ming li ming{"aas"}
             </p>
             <p>lorem ipsum </p>
-            <p>lorem ipsum </p>
+            <p>Minh + Sao Chi = {'<3'} </p>
+            <p 
+              dangerouslySetInnerHTML={{
+                __html: 'YUNA²'
+              }}
+            ></p>
             <p>lorem ipsum lorem ipsum lorem ipsum</p>
             <p>li ming lorem ipsum</p>
             <p>
@@ -43,7 +43,8 @@ export default class Home extends Component {
             </Link>
           </div>
         </section>
+        <Review/>
       </div>
     );
-  }
-}
+    }
+export default Home;

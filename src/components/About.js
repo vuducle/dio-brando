@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Media from "react-media";
+import GG from '../img/gg.png'
+
 export class About extends Component {
   render() {
     return (
@@ -19,6 +21,7 @@ export class About extends Component {
             </Fragment>
           )}
         </Media>
+        
       </div>
     );
   }
