@@ -71,14 +71,13 @@ nav {
   list-style: none;
 }
 
-
-
 .showcase {
   background-image: url("https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/11/Featured-Image-Dio-Brando-Cropped.jpg");
   background-repeat: no-repeat;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   background-size: cover;
+  box-shadow: 0 1px 10px #333;
 }
 
 .info {
@@ -113,7 +112,7 @@ nav {
   font-weight: bold;
 }
 
-@media (max-width:1024px){
+@media (max-width: 1024px) {
   .nav-links {
     grid-template-columns: 1fr;
     align-items: center;

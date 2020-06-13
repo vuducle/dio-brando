@@ -1,51 +1,64 @@
-import React from 'react'
-import '../App.css'
-import giornoGiovanna from '../img/gg.png';
-import cloudStrife from '../img/cs.png';
-import aerithGainsborough from '../img/ag.png';
-import liMing from '../img/lm.png';
+import React from "react";
+import "../App.css";
+import "../sectionBox.css";
+import giornoGiovanna from "../img/gg.png";
+import cloudStrife from "../img/cs.png";
+import aerithGainsborough from "../img/ag.png";
+import liMing from "../img/lm.png";
 
-let profileImg = [
-    {
-        photo: giornoGiovanna,
-        name: "Giorno Giovanna",
-        text: "I have a dream and want a peaceful life in Italy. My dad 'D I O' is a vampire by the way..."
-    },
-    {
-        photo: aerithGainsborough,
-        name: "Aerith Gainsborough",
-        text: "I'm a local florist at sector 5 and a ancient from the planet. And i got a i'm falling in love "
-    },
-    {
-        photo: cloudStrife,
-        name: "Cloud Strife",
-        text: "I'm a EX-SOLDIER"
-    },
-    {
-        photo: liMing,
-        name: "Li Ming Lee",
-        text: "I need more power! I want to be the strongest sorceress in the world >:("
-    }
-]
+let persons = [
+  {
+    id: 1,
+    photo: giornoGiovanna,
+    name: "Giorno Giovanna",
+    text:
+      "I have a dream and want a peaceful life in Italy. My dad 'D I O' is a vampire by the way...",
+  },
+  {
+    id: 2,
+    photo: aerithGainsborough,
+    name: "Aerith Gainsborough",
+    text:
+      "I'm a local florist at sector 5 and a ancient from the planet. And i think i'm falling in love uwu ",
+  },
+  {
+    id: 3,
+    photo: cloudStrife,
+    name: "Cloud Strife",
+    text: "I'm a EX-SOLDIER",
+  },
+  {
+    id: 4,
+    photo: liMing,
+    name: "Li Ming Lee",
+    text:
+      "I need more power! I want to be the strongest sorceress in the world >:(",
+  },
+];
 
 function Review() {
+  return (
+    <div>
+      <section className="boxes">
+        <h2>Reviews</h2>
+        {/* Mapping through objects */}
+        {persons.map((p) => {
+          return (
+            <React.Fragment key={p.id}>
+              <div className="box">
+                <img src={p.photo} alt="" />
+                <h3>{p.name}</h3>
+                <p>{p.text}</p>
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </section>
 
-    
-    return (
-        <div>
-            <section>
-                {profileImg.map((e,i) =>
-                <p>
-                photo={e.photo},
-                name={e.name},
-                text={e.text},
-                key={i},
-                </p>
-                )}
-            </section>
-            <img src={aerithGainsborough}></img>
-        </div>
-    )
+      {/* *Test
+      <img src={aerithGainsborough} alt="" /> */}
+    </div>
+  );
 }
 
 export default Review;

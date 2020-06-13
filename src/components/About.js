@@ -1,30 +1,11 @@
-import React, { Component, Fragment } from "react";
-import Media from "react-media";
-import GG from '../img/gg.png'
+import React from "react";
 
-export class About extends Component {
-  render() {
-    return (
-      <div>
-        <Media
-          queries={{
-            small: "(max-width: 599px)",
-            medium: "(min-width: 600px) and (max-width: 1199px)",
-            large: "(min-width: 1200px)",
-          }}
-        >
-          {(matches) => (
-            <Fragment>
-              {matches.small && <p>I am small!</p>}
-              {matches.medium && <p>I am medium!</p>}
-              {matches.large && <p>I am large!</p>}
-            </Fragment>
-          )}
-        </Media>
-        
-      </div>
-    );
-  }
+function About() {
+  return (
+    <div>
+      <h3>Dio</h3>
+    </div>
+  );
 }
 
 export default About;
