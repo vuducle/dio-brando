@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import PermContactCalendarOutlinedIcon from "@material-ui/icons/PermContactCalendarOutlined";
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
 // import { usemediaquery } from "@material-ui/core";
 
 function Nav() {
@@ -12,8 +13,6 @@ function Nav() {
     color: "#333",
     textTransform: "uppercase",
     fontWeight: "bold",
-
-    
   };
 
   const iconStyle = {
@@ -23,11 +22,11 @@ function Nav() {
     marginRight: "10px",
   };
 
-  function changeColor(e){
+  function changeColor(e) {
     e.target.style.color = "#fff";
   }
 
-  function onLeave(e){
+  function onLeave(e) {
     e.target.style.color = "#333";
   }
 
@@ -37,21 +36,47 @@ function Nav() {
       <nav>
         <ul className="nav-links">
           <li>
-            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="/">
+            <Link
+              onMouseEnter={changeColor}
+              onMouseLeave={onLeave}
+              style={style}
+              to="/"
+            >
               <HomeOutlinedIcon style={iconStyle} />
               Home
             </Link>
           </li>
           <li>
-            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="about">
+            <Link
+              onMouseEnter={changeColor}
+              onMouseLeave={onLeave}
+              style={style}
+              to="about"
+            >
               <InfoOutlinedIcon style={iconStyle} />
               About
             </Link>
           </li>
           <li>
-            <Link onMouseEnter={changeColor} onMouseLeave={onLeave} style={style} to="contact">
+            <Link
+              onMouseEnter={changeColor}
+              onMouseLeave={onLeave}
+              style={style}
+              to="contact"
+            >
               <PermContactCalendarOutlinedIcon style={iconStyle} />
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              onMouseEnter={changeColor}
+              onMouseLeave={onLeave}
+              style={style}
+              to="login"
+            >
+              <VpnKeyIcon style={iconStyle} />
+              Login
             </Link>
           </li>
         </ul>

@@ -56,19 +56,26 @@ nav {
   text-decoration: none;
   display: grid;
   align-items: center;
-  min-height: 2.5vh;
+  min-height: 3.5vh;
   background: rgb(219, 219, 219);
   opacity: 0.6;
+  position: fixed;
+  width: 100%;
   justify-content: space-around;
 }
 
 .nav-links {
   width: 100%;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  padding: 0 50px;
+}
+
+li {
+  margin: 0 10px;
 }
 
 .showcase {
@@ -114,6 +121,7 @@ nav {
 
 @media (max-width: 1024px) {
   .nav-links {
+    display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     gap: 10px;
