@@ -1,15 +1,32 @@
-.boxes {
-  padding-bottom: 100px;
-
-  z-index: -1;
-}
 .boxes h2 {
   text-transform: uppercase;
   margin: 50px 0 0 11%;
   text-decoration: underline;
 }
+.boxes {
+  margin: 40px 0;
+}
+
+.boxes {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
 
 .box {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 30px 0 30px 10%;
+  border-radius: 50px;
+  height: 80%;
+}
+.box img {
+  float: right;
+  width: 20%;
+}
+
+/* .box {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 30px 0 30px 10%;
@@ -33,7 +50,7 @@
 
 .box p {
   font-size: 25px;
-}
+} */
 
 @media (max-width: 424px) {
   .box img {

@@ -46,11 +46,9 @@ function Review() {
           return (
             <React.Fragment key={p.id}>
               <div className="box">
-                <div>
-                  <img src={p.photo} alt="" />
-                  <h3>{p.name}</h3>
-                  <p>{p.text}</p>
-                </div>
+                <img src={p.photo} alt="" />
+                <h3>{p.name}</h3>
+                <p>{p.text}</p>
               </div>
             </React.Fragment>
           );
