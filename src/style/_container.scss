@@ -1,0 +1,39 @@
+.gridcontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+}
+
+.story {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  margin: 0 auto 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.btn {
+  margin: 15px;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 30%;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-top: 70px;
+  p {
+    color: #333333;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.icons {
+  margin: 5px;
+}

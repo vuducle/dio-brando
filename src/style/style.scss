@@ -1,0 +1,81 @@
+@import "config";
+@import "sectionBox";
+@import "container";
+nav {
+  text-decoration: none;
+  display: grid;
+  align-items: center;
+  min-height: 3.5vh;
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 1;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0 50px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.showcase {
+  background-image: url("https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/11/Featured-Image-Dio-Brando-Cropped.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-size: cover;
+  box-shadow: 0 1px 10px #333333;
+  padding: 50px 0 50px 0;
+  color: #ffffff;
+}
+
+.info {
+  margin: 0 10vh 0 10vh;
+}
+
+.info h1 {
+  font-size: 50px;
+  color: var(--primary);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.info p {
+  color: var(--primary);
+  letter-spacing: 0.2em;
+  font-size: 24px;
+}
+
+.btn-info {
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: rgb(173, 173, 173);
+  color: var(--dark);
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+}

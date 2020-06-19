@@ -1,23 +1,20 @@
-.boxes h2 {
+h2 {
   text-transform: uppercase;
-  margin: 50px 0 0 11%;
+  text-align: center;
   text-decoration: underline;
 }
-.boxes {
-  margin: 40px 0;
-}
 
-.boxes {
+.box-container {
   display: grid;
   width: 80%;
   margin: 0 auto;
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .box {
-  width: 80%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  margin: 30px 0 30px 10%;
+
   border-radius: 20px;
   box-shadow: 0 3px 5px #333333;
   height: 80%;

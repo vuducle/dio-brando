@@ -1,6 +1,5 @@
 import React from "react";
-import "../App.css";
-import "../sectionBox.css";
+import "../style/style.css";
 import giornoGiovanna from "../img/gg.png";
 import cloudStrife from "../img/cs.png";
 import aerithGainsborough from "../img/ag.png";
@@ -39,8 +38,8 @@ let persons = [
 function Review() {
   return (
     <div>
-      <section className="boxes">
-        <h2>Reviews</h2>
+      <h2>Reviews</h2>
+      <section className="box-container">
         {/* Mapping through objects */}
         {persons.map((p) => {
           return (
@@ -54,9 +53,6 @@ function Review() {
           );
         })}
       </section>
-
-      {/* *Test
-      <img src={aerithGainsborough} alt="" /> */}
     </div>
   );
 }

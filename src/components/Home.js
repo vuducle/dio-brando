@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../style/style.css";
 import Review from "./Review";
 import Footer from "./Footer";
 import dio from "../img/dio.jpg";

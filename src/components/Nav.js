@@ -4,7 +4,6 @@ import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import PermContactCalendarOutlinedIcon from "@material-ui/icons/PermContactCalendarOutlined";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
-// import { usemediaquery } from "@material-ui/core";
 
 function Nav() {
   const style = {

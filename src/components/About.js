@@ -1,25 +1,39 @@
 import React, { useEffect, useState } from "react";
-import "../App.css";
-
+import "../style/style.css";
+import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
+import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
+import ShareIcon from "@material-ui/icons/Share";
 function About() {
-  const [data, setData] = useState({ hits: [] });
-
+  const [count, setCount] = useState(0);
   useEffect(() => {
-    const apiURL = "https://randomuser.me/api";
-    fetch(apiURL)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    if (count) {
+      console.log("hi");
+    }
   });
-
   return (
     <div>
-      <ul>
-        {data.hits.map((item) => (
-          <li key={item.objectID}>
-            <a href={item.url}>{item.title}</a>
-          </li>
-        ))}
-      </ul>
+      <React.Fragment>
+        <div className="gridcontainer">
+          <div className="story"></div>
+
+          <div className="container about">
+            <img
+              onDoubleClick={() => setCount(count + 1)}
+              src="https://8images.cgames.de/images/gamestar/4/just-cause-3-doge-meme_2724847.jpg"
+              alt=""
+            ></img>
+            <div>
+              <ThumbUpAltIcon
+                className="btn"
+                onClick={() => setCount(count + 1)}
+              ></ThumbUpAltIcon>
+              <ChatBubbleIcon className="btn"></ChatBubbleIcon>
+              <ShareIcon className="btn"></ShareIcon>
+            </div>
+            <p>Liked by {count} people.</p>
+          </div>
+        </div>
+      </React.Fragment>
     </div>
   );
 }

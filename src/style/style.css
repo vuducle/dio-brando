@@ -1,0 +1,215 @@
+html {
+  font: Roboto, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.box-container {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  padding: 50px;
+}
+
+.box {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 5px #333333;
+          box-shadow: 0 3px 5px #333333;
+  height: 100%;
+  text-align: center;
+}
+
+.box img {
+  width: 20%;
+}
+
+/* .box {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 30px 0 30px 10%;
+    padding: 20px;
+    border-radius: 50px;
+    height: 500px;
+    box-shadow: 0px 1px 5px #333;
+    z-index: 1;
+  }
+  
+  .box img {
+    float: left;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+  
+  .box h3 {
+    font-size: 50px;
+    line-height: 0;
+  }
+  
+  .box p {
+    font-size: 25px;
+  } */
+@media (max-width: 424px) {
+  .box img {
+    width: 50%;
+  }
+}
+
+.gridcontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+}
+
+.story {
+  width: 30%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.btn {
+  margin: 15px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 30%;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-top: 70px;
+}
+
+.about p {
+  color: #333333;
+}
+
+.about img {
+  max-width: 100%;
+}
+
+.icons {
+  margin: 5px;
+}
+
+nav {
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 3.5vh;
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.nav-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0 50px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.showcase {
+  background-image: url("https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/11/Featured-Image-Dio-Brando-Cropped.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  -webkit-box-shadow: 0 1px 10px #333333;
+          box-shadow: 0 1px 10px #333333;
+  padding: 50px 0 50px 0;
+  color: #ffffff;
+}
+
+.info {
+  margin: 0 10vh 0 10vh;
+}
+
+.info h1 {
+  font-size: 50px;
+  color: var(--primary);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.info p {
+  color: var(--primary);
+  letter-spacing: 0.2em;
+  font-size: 24px;
+}
+
+.btn-info {
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #adadad;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
