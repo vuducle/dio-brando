@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Login from "./components/Login";
 import "./style/style.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/login" component={Login} />
           <Route path="/" component={Home} />
         </Switch>
       </div>

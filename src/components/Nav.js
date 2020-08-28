@@ -29,7 +29,6 @@ function Nav() {
     e.target.style.color = "#333";
   }
 
-  // const isactive = usemediaquery("(max-width: 1024px");
   return (
     <div>
       <nav>
