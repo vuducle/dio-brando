@@ -77,6 +77,16 @@ function Nav() {
               Login
             </Link>
           </li>
+          <li>
+            <Link
+              onMouseEnter={changeColor}
+              onMouseLeave={onLeave}
+              style={style}
+              to="calculator"
+            >
+             Calculator
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

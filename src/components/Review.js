@@ -41,13 +41,13 @@ function Review() {
       <h2>Reviews</h2>
       <section className="box-container">
         {/* Mapping through objects */}
-        {persons.map((p) => {
+        {persons.map((person) => {
           return (
-            <React.Fragment key={p.id}>
+            <React.Fragment key={person.id}>
               <div className="box">
-                <img src={p.photo} alt="" />
-                <h3>{p.name}</h3>
-                <p>{p.text}</p>
+                <img src={person.photo} alt="" />
+                <h3>{person.name}</h3>
+                <p>{person.text}</p>
               </div>
             </React.Fragment>
           );
